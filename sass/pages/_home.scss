@@ -1,0 +1,417 @@
+.content
+{
+  overflow:hidden;
+}
+
+.highlights
+{
+  position: relative;
+
+  transform: translateY(8rem);
+
+  &::after
+  {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 10rem;
+    left: 0;
+    background-color: $cbg;
+
+    clip-path: polygon(0 45%, 100% 20%, 100% 100%, 0 100%);
+
+    z-index: -1;
+  }
+
+  &__text
+  {
+    margin: 0 auto;
+    max-width: 40%;
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 3;
+
+    @media only screen and (max-width: 1366px)
+    {
+      max-width: 60%;
+    }
+
+    @media only screen and (max-width: 700px)
+    {
+      max-width: 80%;
+    }
+
+    & p.text__line
+    {
+      display: inline-block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.membership
+{
+  position: relative;
+  height: 90vh;
+
+  transform: translateY(20%);
+
+  @media only screen and (max-height: 680px)
+  {
+    height: 125vh;
+  }
+
+  @media only screen and (max-height: 530px)
+  {
+    height: 150vh;
+  }
+
+  &__content
+  {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 1;
+  }
+
+  &__text
+  {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+
+    z-index: 2;
+
+    & .text__line
+    {
+      width: 45%;
+
+      @media only screen and (max-width: 1280px)
+      {
+        width: 60%;
+      }
+
+      @media only screen and (max-width: 900px)
+      {
+        width: 80%;
+      }
+
+      @media only screen and (max-width: 640px)
+      {
+        width: 100%;
+      }
+    }
+  }
+
+  &__nav
+  {
+    width: 80%;
+    margin: 0 auto;
+
+    & *:not(:last-child)
+    {
+      margin-right: 2rem;
+    }
+
+    @media only screen and (max-width: 660px)
+    {
+      display: flex;
+      width: 100%;
+
+      flex-direction: row;
+      justify-content: center;
+
+      & *:not(:last-child)
+      {
+        margin-right: 1vw;
+      }
+    }
+  }
+
+  &__image
+  {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 90%;
+
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+    filter: brightness(80%);
+  }
+}
+
+.rory
+{
+  height: 56rem;
+  margin-left: 9.5%;
+
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+
+  background-color: $cbg;
+
+  @media only screen and (max-width: 890px)
+  {
+    height: auto;
+    margin-left: 0;
+    background-color: transparent;
+
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  }
+
+  &__content
+  {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+
+    @media only screen and (max-width: 890px)
+    {
+      width: 80%;
+      margin: 0 auto;
+      flex-direction: column;
+    }
+  }
+
+  &__left
+  {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    left: 0;
+
+    @media only screen and (max-width: 890px)
+    {
+      width: 100%;
+      height: 80vh;
+      margin-bottom: 4vh;
+    }
+
+    @media only screen and (max-height: 480px)
+    {
+      height: 150vh;
+    }
+  }
+
+  &__right
+  {
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    right: 0;
+    bottom: 0;
+
+    @media only screen and (max-width: 1220px)
+    {
+      height: 70%;
+    }
+
+    @media only screen and (max-width: 890px)
+    {
+      width: 100%;
+      position: relative;
+    }
+  }
+
+  &__image
+  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__text
+  {
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    width: 50%;
+
+    @media only screen and (max-width: 1820px)
+    {
+      width: 60%;
+    }
+
+    @media only screen and (max-width: 890px)
+    {
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+  &__nav
+  {
+    width: 50%;
+    margin-left: 4rem;
+
+    @media only screen and (max-width: 1820px)
+    {
+      width: 60%;
+    }
+
+    @media only screen and (max-width: 890px)
+    {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 2rem 0;
+    }
+  }
+
+  @media only screen and (max-width: 1520px)
+  {
+    &__title
+    {
+      width: 100%;
+    }
+  }
+}
+
+.proshop
+{
+  display: grid;
+  height: 24rem;
+  grid-template-columns: minmax(0, 10%) auto minmax(0, 10%);
+
+  overflow: hidden;
+
+  background-color: $cbase;
+
+  &__content
+  {
+    display: flex;
+    flex-direction: row;
+    grid-column: 2 / span 1;
+  }
+
+  &__left
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: 2rem 0;
+  }
+
+  &__right
+  {
+    width: 50%;
+    position: relative;
+  }
+
+  &__text
+  {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  &__title
+  {
+    margin-bottom: 1rem;
+  }
+
+  &__image
+  {
+    position: absolute;
+    height: 30rem;
+    bottom: -25%;
+    left: 0;
+
+    @for $i from 1 through 3
+    {
+      &:nth-child(#{$i})
+      {
+        transform: translateX(50% * ($i - 1) + (10 * ($i - 1)));
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1440px)
+  {
+    &__left
+    {
+      width: 40%;
+    }
+
+    &__right
+    {
+      width: 60%;
+    }
+  }
+
+  @media only screen and (max-width: 1280px)
+  {
+    &__left
+    {
+      width: 30%;
+    }
+
+    &__right
+    {
+      width: 70%;
+    }
+  }
+
+  @media only screen and (max-width: 960px)
+  {
+    height: auto;
+
+    &__content
+    {
+      margin: 4rem 0;
+      flex-direction: column;
+    }
+
+    &__left
+    {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    &__right
+    {
+      display: flex;
+      justify-content: center;
+      width: 90%;
+      margin: 0 auto;
+      height: 24vh;
+    }
+
+    &__nav
+    {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__images
+    {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    &__image
+    {
+      position: relative;
+      height: 100%;
+
+      @for $i from 1 through 3
+      {
+        &:nth-child(#{$i})
+        {
+          transform: translateX(-50% * ($i - 1) + 33.3%);
+        }
+      }
+    }
+  }
+}

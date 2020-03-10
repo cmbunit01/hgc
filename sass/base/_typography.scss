@@ -1,0 +1,780 @@
+//////////////////
+// Custom fonts //
+//////////////////
+
+@font-face
+{
+  font-family: 'Futura Bold';
+  src: url('../fonts/Futura/Futura-Bold.ttf');
+}
+
+@font-face
+{
+  font-family: 'Proxima Nova Regular';
+  src: url('../fonts/Proxima Nova/ProximaNova-Regular.ttf');
+}
+
+@font-face
+{
+  font-family: 'Proxima Nova Regular Italic';
+  src: url('../fonts/Proxima Nova/ProximaNova-RegularIt.ttf');
+}
+
+@font-face
+{
+  font-family: 'Proxima Nova Bold';
+  src: url('../fonts/Proxima Nova/ProximaNova-Bold.ttf');
+}
+
+//////////
+// Base //
+//////////
+
+.text
+{
+  &__line
+  {
+    font-family: $fregular;
+    font-size: 1.2rem;
+
+    @media only screen and (max-width: 480px)
+    {
+      font-size: 5vw;
+    }
+  }
+}
+
+////////////////
+// Components //
+////////////////
+
+// Address //
+.address
+{
+  &__item
+  {
+    font-family: $fregular;
+    font-style: normal;
+    font-size: .8rem;
+    color: $ccontrast;
+  }
+}
+
+// Breadcrumbs //
+
+.breadcrumbs
+{
+  &__link
+  {
+    &:link,
+    &:visited
+    {
+      font-size: 1.1rem;
+      font-family: $frbold;
+      color: $cbase;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    &:hover
+    {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Buttons //
+
+.btn
+{
+  white-space: nowrap;
+
+  &:link,
+  &:visited
+  {
+    text-decoration: none;
+    color: $ccontrast;
+    font-size: 1rem;
+
+    @media only screen and (max-width: 560px)
+    {
+      font-size: 3.2vw;
+    }
+  }
+
+  &--contrast
+  {
+    &:link,
+    &:visited
+    {
+      font-family: $frbold;
+      text-transform: uppercase;
+      color: $ccontrast;
+    }
+  }
+
+  &--diag
+  {
+    &:link,
+    &:visited
+    {
+      text-transform: uppercase;
+      font-family: $frbold;
+      color: $ccontrast;
+    }
+  }
+
+  &--fill
+  {
+    & .btn__text
+    {
+      color: $ccontrast;
+    }
+
+    &:hover .btn__text
+    {
+      //color: $cbase;
+    }
+  }
+
+  &--contrast.btn--diag
+  {
+    & .btn__text
+    {
+      color: $ccontrast;
+    }
+  }
+
+  &--contrast.btn--diag
+  {
+    &:hover
+    {
+      & .btn__text
+      {
+        color: $csuccess;
+      }
+    }
+  }
+
+  &--contrast.btn--diag.btn--fill
+  {
+    & .btn__text
+    {
+      color: $cbase;
+    }
+
+    &:hover
+    {
+      & .btn__text
+      {
+        color: $csuccess;
+      }
+    }
+  }
+}
+
+// DDMenu //
+
+.ddmenu
+{
+  & .btn__text
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $frbold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $ccontrast;
+  }
+}
+
+.nav-top--alt .ddmenu
+{
+  & .btn__text
+  {
+    color: $cbase;
+  }
+
+  &__button.btn--fill .btn__text
+  {
+    color: $ccontrast;
+  }
+
+  &__link .btn__text
+  {
+    color: $ccontrast;
+  }
+}
+
+// Footer //
+.footer
+{
+  &__title
+  {
+    font-family: $frbold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $fclight;
+
+    @media only screen and (max-width: 840px)
+    {
+      text-align: center;
+    }
+  }
+
+  &__contact
+  {
+    &:not(:last-child)
+    {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__link
+  {
+    margin-bottom: .4rem;
+    font-size: .8rem;
+  }
+
+  &__copyright,
+  &__credit .link:link,
+  &__credit .link:visited,
+  {
+    font-family: $fregular;
+    font-size: .8rem;
+    color: $fclight;
+  }
+}
+
+.legal
+{
+  &__link
+  {
+    &:link,
+    &:visited
+    {
+      font-family: $fregular;
+      font-size: .8rem;
+      text-decoration: none;
+      color: $fclight;
+    }
+
+    &:hover
+    {
+      text-decoration: underline;
+    }
+  }
+}
+
+/*******/
+// Nav //
+/*******/
+
+// Cards //
+
+.nav-cards
+{
+  &__title,
+  &__tagline
+  {
+    text-align: center;
+    text-transform: uppercase;
+    color: $ccontrast;
+  }
+
+  &__tagline
+  {
+    font-family: $fregular;
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+
+    @media only screen and (max-width: 880px)
+    {
+      font-size: 1.1rem;
+    }
+  }
+
+  &__title
+  {
+    font-size: 2rem;
+    font-family: $fbold;
+    white-space: nowrap;
+
+    @media only screen and (max-width: 1366px)
+    {
+      font-size: 1.8rem;
+    }
+
+    @media only screen and (max-width: 880px)
+    {
+      font-size: 1.4rem;
+    }
+  }
+
+  & .btn
+  {
+    &:link,
+    &:visited
+    {
+      font-family: $fregular;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      color: $ccontrast;
+    }
+  }
+}
+
+.hamburger
+{
+  &__text
+  {
+    font-family: $frbold;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: $ccontrast;
+
+    @media only screen and (max-width: 600px)
+    {
+      font-size: 1.4rem;
+    }
+
+    @media only screen and (max-width: 480px)
+    {
+      font-size: 3vw;
+    }
+
+    @media only screen and (max-height: 400px)
+    {
+      font-size: 5vh;
+    }
+  }
+
+  &--alt &__text
+  {
+    color: $cbase;
+  }
+
+  &--alt &__checkbox:checked + &__button &__text
+  {
+    color: $ccontrast;
+  }
+
+  &--alt &__checkbox:checked + &__button>&__text
+  {
+    @media only screen and (max-width: 1024px)
+    {
+      color: $cfailure;
+    }
+  }
+
+  &__button:hover  &__text
+  {
+    @media only screen and (min-width: 1024px)
+    {
+      color: $csuccess;
+    }
+  }
+
+  &__checkbox:checked + &__button:hover &__text
+  {
+    @media only screen and (min-width: 1024px)
+    {
+      color: $cfailure;
+    }
+  }
+
+  &__checkbox:checked + &__button &__text
+  {
+    @media only screen and (max-width: 1024px)
+    {
+      color: $cfailure;
+    }
+  }
+}
+
+.fullscreen-menu
+{
+  &__main,
+  &__secondary
+  {
+    & li>a
+    {
+      &:link,
+      &:visited
+      {
+        font-family: $frbold;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      &:hover
+      {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__main
+  {
+    & li>a
+    {
+      &:link,
+      &:visited
+      {
+        font-size: 2.4rem;
+        color: $ccontrast;
+
+        @media only screen and (max-width: 640px),
+        only screen and (max-height: 900px)
+        {
+          font-size: 1.8rem;
+        }
+
+        @media only screen and (max-height: 860px)
+        {
+          font-size: 2vh;
+        }
+
+        @media only screen and (max-height: 600px)
+        and (orientation: landscape)
+        {
+          font-size: 3.8vh;
+        }
+      }
+    }
+  }
+
+  &__link
+  {
+    &--inactive
+    {
+      &:link,
+      &:visited
+      {
+        color: $fcnavsecondary;
+      }
+    }
+  }
+
+  &__secondary
+  {
+    & li>a
+    {
+      &:link,
+      &:visited
+      {
+        font-size: 1.4rem;
+        color: $fcnavsecondary;
+
+        @media only screen and (max-width: 640px),
+        only screen and (max-height: 900px)
+        {
+          font-size: 1.1rem;
+        }
+
+        @media only screen and (max-height: 760px)
+        {
+          font-size: 2.2vh;
+        }
+
+        @media only screen and (max-height: 600px)
+        and (orientation: landscape)
+        {
+          font-size: 3.8vh;
+        }
+      }
+    }
+  }
+
+  &__children>&__item>&__link
+  {
+    &:link,
+    &:hover
+    {
+      font-family: $fregular;
+      font-size: 1rem;
+      color: $ccontrast;
+
+      @media only screen and (max-width: 860px)
+      and (orientation: portrait)
+      {
+        font-size: 1.8vh;
+      }
+
+      @media only screen and (max-width: 860px)
+      and (orientation: landscape)
+      {
+        font-size: 3vh;
+      }
+    }
+  }
+}
+
+.link
+{
+  &:link,
+  &:visited
+  {
+    font-family: $fregular;
+    text-decoration: none;
+  }
+
+  &:hover
+  {
+    text-decoration: underline;
+  }
+
+  &--bold
+  {
+    &:link,
+    &:visited
+    {
+      font-weight: 700;
+    }
+  }
+
+  &--contrast
+  {
+    &:link,
+    &:visited
+    {
+      color: $ccontrast;
+    }
+  }
+}
+
+.scorecard
+{
+  &__item
+  {
+    font-size: 1.1rem;
+    font-family: $fregular;
+    text-transform: uppercase;
+    color: $cbase;
+  }
+
+  &__header &__item
+  {
+    font-size: 0.8rem;
+    font-family: $frbold;
+    text-transform: uppercase;
+    color: $ccontrast;
+  }
+}
+
+/**********/
+// Images //
+/**********/
+
+// Hero //
+
+.hero
+{
+  &__title,
+  &__tagline
+  {
+    text-align: right;
+    color: $ccontrast;
+    white-space: normal;
+    text-transform: uppercase;
+  }
+
+  &__title
+  {
+    font-family: $fbold;
+    font-size: 9.6rem;
+
+    @media only screen and (max-width: 1410px)
+    {
+      font-size: 11vw;
+    }
+
+    @media only screen and (max-height: 900px)
+    and (orientation: landscape)
+    {
+      font-size: 11vh;
+    }
+  }
+
+  &__tagline
+  {
+    font-family: 'Proxima Nova Regular Light', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+
+    @media only screen and (max-width: 990px)
+    {
+      font-size: 2.4vw;
+    }
+  }
+}
+
+////////////
+// Layout //
+////////////
+
+// Content //
+.content
+{
+  &__title
+  {
+    font-size: 3.6rem;
+    font-family: $frbold;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+///////////
+// Pages //
+///////////
+
+/********/
+/* Home */
+/********/
+
+.highlights
+{
+  &__text
+  {
+    text-align: center;
+
+    @media only screen and (max-width: 1620px)
+    {
+      text-align: left;
+    }
+  }
+
+  &__title
+  {
+    font-family: $fbold;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    text-align: center;
+
+    @media only screen and (max-width: 1620px)
+    {
+      font-size: 2.4rem;
+    }
+
+    @media only screen and (max-width: 1366px)
+    {
+      font-size: 1.8rem;
+    }
+
+    @media only screen and (max-width: 700px)
+    {
+      font-size: 1.4rem;
+    }
+
+    @media only screen and (max-width: 410px)
+    {
+      font-size: 5vw;
+    }
+  }
+}
+
+.membership
+{
+  &__text
+  {
+    & .text__line
+    {
+      color: $ccontrast;
+    }
+  }
+
+  &__title
+  {
+    font-family: $fbold;
+    font-size: 3.6rem;
+    color: $ccontrast;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: 780px)
+    {
+      font-size: 2.8rem;
+    }
+
+    @media only screen and (max-width: 620px)
+    {
+      font-size: 2.1rem;
+    }
+
+    @media only screen and (max-width: 480px)
+    {
+      font-size: 7vw;
+    }
+  }
+
+  &__title,
+  & .text__line
+  {
+    margin-bottom: 2rem;
+  }
+}
+
+.rory
+{
+  &__title
+  {
+    width: 80%;
+    margin-bottom: 1.8rem;
+    font-family: $frbold;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+
+    @media only screen and (max-width: 890px)
+    {
+      width: 100%;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 700px)
+    {
+      font-size: 5.5vw;
+    }
+  }
+
+  & .text__line
+  {
+    color: $fclight;
+    line-height: 1.8rem;
+  }
+}
+
+.proshop
+{
+  &__title
+  {
+    font-family: $fbold;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+  }
+
+  &__title,
+  & .text__line
+  {
+    color: $ccontrast;
+
+    @media only screen and (max-width: 540px)
+    {
+      text-align: center;
+    }
+  }
+}
+
+.mail
+{
+  &__text
+  {
+    & .text__line
+    {
+      font-weight: 600;
+      color: $ccontrast;
+    }
+  }
+}

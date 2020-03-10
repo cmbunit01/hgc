@@ -1,0 +1,16 @@
+.address
+{
+  margin-bottom: .4rem;
+
+  &__items
+  {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+    @media only screen and (max-width: 1760px)
+    {
+      flex-direction: column;
+    }
+  }
+}

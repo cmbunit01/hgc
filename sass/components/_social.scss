@@ -1,0 +1,103 @@
+.social
+{
+  display: flex;
+  list-style: none;
+
+  &__item
+  {
+    &:not(:last-child)
+    {
+      margin-right: 1rem;
+    }
+  }
+
+  &__icon
+  {
+    width: 2rem;
+    height: 2rem;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &--facebook
+    {
+      background-image: url('../images/assets/icons/social/facebook.svg');
+
+      &--alt
+      {
+        background-image: url('../images/assets/icons/social/facebook-alt.svg');
+      }
+
+      &:hover,
+      &--alt:hover
+      {
+        background-image: url('../images/assets/icons/social/facebook-success.svg');
+      }
+    }
+
+    &--instagram
+    {
+      background-image: url('../images/assets/icons/social/instagram.svg');
+
+      &--alt
+      {
+        background-image: url('../images/assets/icons/social/instagram-alt.svg');
+      }
+
+      &:hover,
+      &--alt:hover
+      {
+        background-image: url('../images/assets/icons/social/instagram-success.svg');
+      }
+    }
+
+    &--linkedin
+    {
+      background-image: url('../images/assets/icons/social/linkedin.svg');
+
+      &--alt
+      {
+        background-image: url('../images/assets/icons/social/linkedin-alt.svg');
+      }
+
+      &:hover,
+      &--alt:hover
+      {
+        background-image: url('../images/assets/icons/social/linkedin-success.svg');
+      }
+    }
+
+    &--twitter
+    {
+      background-image: url('../images/assets/icons/social/twitter.svg');
+
+      &--alt
+      {
+        background-image: url('../images/assets/icons/social/twitter-alt.svg');
+      }
+
+      &:hover,
+      &--alt:hover
+      {
+        background-image: url('../images/assets/icons/social/twitter-success.svg');
+      }
+    }
+
+    &--youtube
+    {
+      background-image: url('../images/assets/icons/social/youtube.svg');
+
+      &--alt
+      {
+        background-image: url('../images/assets/icons/social/youtube-alt.svg');
+      }
+
+      &:hover,
+      &--alt:hover
+      {
+        background-image: url('../images/assets/icons/social/youtube-success.svg');
+      }
+    }
+  }
+}

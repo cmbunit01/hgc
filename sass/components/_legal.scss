@@ -1,0 +1,44 @@
+.legal
+{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+  @media only screen and (max-width: 360px)
+  {
+    flex-direction: column;
+  }
+
+  &__item
+  {
+    position: relative;
+
+    &:not(:last-child)
+    {
+      margin-right: 1rem;
+
+      @media only screen and (max-width: 360px)
+      {
+        margin-right: 0;
+        margin-bottom: 2vh;
+      }
+
+      &::after
+      {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        right: -.5rem;
+        top: 0;
+
+        background-color: $fclight;
+
+        @media only screen and (max-width: 360px)
+        {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+.hero
+{
+  position: relative;
+  height: 90vh;
+
+  @media only screen and (max-height: 700px)
+  {
+    height: 110vh;
+  }
+
+  &__images
+  {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  // Wrappers for the images
+  &__imgboxleft,
+  &__imgboxright
+  {
+    position: relative;
+    width: 60%;
+    height: 100%;
+  }
+
+  &__imageleft,
+  &__imageright
+  {
+    position: absolute;
+  }
+
+  &__imageleft
+  {
+    height: 110%;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    filter: brightness(80%);
+
+    @supports (not (clip-path: polygon())) or
+    (not (-webkit-clip-path: polygon()))
+    {
+      height: 100%;
+    }
+
+    @media only screen and (max-width: 1280px)
+    {
+      display: block;
+      width: 110%;
+      height: 105%;
+      object-fit: cover;
+      object-position: 25% center;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    }
+
+    @media only screen and (max-width: 840px)
+    {
+      object-position: 30% center;
+    }
+
+    @media only screen and (max-width: 700px)
+    {
+      object-position: 35% center;
+    }
+  }
+
+  &__imageright
+  {
+    height: 105%;
+    right: 0;
+    z-index: 2;
+    clip-path: polygon(27% 0, 100% 0, 100% 80%, 27% 90%);
+
+    @media only screen and (max-width: 1620px)
+    {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: right center;
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 90%);
+    }
+
+    @media only screen and (max-width: 1366px)
+    {
+      object-position: 70% center;
+    }
+
+    @media only screen and (max-width: 900px)
+    {
+      object-position: 60% center;
+    }
+  }
+
+  &__texts
+  {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    width: 80%;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+
+    @media only screen and (max-width: 1585px)
+    {
+      width: 90%;
+    }
+
+    @media only screen and (max-width: 1410px)
+    {
+      width: 95%;
+    }
+  }
+
+  &__title
+  {
+
+  }
+
+  &__tagline
+  {
+    margin-right: 1rem;
+    transform: translateY(1rem);
+
+    @media only screen and (max-width: 990px)
+    {
+      position: absolute;
+      width: 50%;
+      right: 0;
+      top: -4rem;
+    }
+  }
+}

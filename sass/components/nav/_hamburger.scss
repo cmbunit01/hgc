@@ -1,0 +1,212 @@
+.hamburger
+{
+  z-index: 2000;
+
+  &__checkbox
+  {
+    display: none;
+  }
+
+  &__button
+  {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateY(50%);
+
+    z-index: 2000;
+    text-align: center;
+    cursor: pointer;
+
+    @media only screen and (max-height: 700px)
+    {
+      position: absolute;
+      top: -25%;
+      left: 5%;
+    }
+  }
+
+  &__button:hover &__icon,
+  &__button:hover &__icon::before,
+  &__button:hover &__icon::after
+  {
+    @media only screen and (min-width: 1024px)
+    {
+      background-color: $csuccess;
+    }
+  }
+
+  &__button:hover &__icon::before
+  {
+    transform: translateY(-.1rem);
+  }
+
+  &__button:hover &__icon::after
+  {
+    transform: translateY(.1rem);
+  }
+
+  &__icon
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &::before,
+    &::after
+    {
+      content: '';
+      position: absolute;
+      left: 0;
+      transition: transform .2s;
+    }
+
+    &::before
+    {
+      top: -.7rem;
+
+      @media only screen and (max-height: 400px)
+      {
+        top: -2vh;
+      }
+    }
+
+    &::after
+    {
+      top: .7rem;
+
+      @media only screen and (max-height: 400px)
+      {
+        top: 2vh;
+      }
+    }
+
+    &:hover
+    {
+      @media only screen and (min-width: 1024px)
+      {
+        background-color: $csuccess;
+      }
+    }
+  }
+
+  &__text
+  {
+    position: absolute;
+    left: 150%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @media only screen and (max-width: 600px)
+    {
+      left: 18vw;
+    }
+
+    @media only screen and (max-width: 480px)
+    {
+      left: 24vw;
+    }
+  }
+
+  &__icon,
+  &__icon::before,
+  &__icon::after
+  {
+    display: inline-block;
+    width: 2.4rem;
+    height: .25rem;
+    background-color: $ccontrast;
+
+    @media only screen and (max-width: 460px)
+    {
+      width: 10vw;
+    }
+
+    @media only screen and (max-height: 400px)
+    {
+      width: 8vh;
+      height: 1vh;
+    }
+  }
+
+  &--diag &__icon
+  {
+    transform: translate(-50%, -50%) skew(-33deg);
+  }
+
+  &__checkbox:checked ~ &__button>&__icon
+  {
+    transform: translate(-50%, -50%) skew(0deg);
+    background-color: transparent;
+  }
+
+  &__checkbox:checked ~ &__button>&__icon::before
+  {
+    transform: translateY(.7rem) rotate(-45deg) skew(45deg);
+
+    @media only screen and (max-height: 400px)
+    {
+      transform: translateY(2vh) rotate(-45deg) skew(45deg);
+    }
+  }
+
+  &__checkbox:checked ~ &__button>&__icon::after
+  {
+    transform: translateY(-.7rem) rotate(45deg) skew(-45deg);
+
+    @media only screen and (max-height: 400px)
+    {
+      transform: translateY(-2vh) rotate(45deg) skew(-45deg);
+    }
+  }
+
+  &__checkbox:checked ~ &__button:hover &__icon::before,
+  &__checkbox:checked ~ &__button:hover &__icon::after
+  {
+    @media only screen and (min-width: 1024px)
+    {
+      background-color: $cfailure;
+    }
+  }
+
+  &__checkbox:checked ~ &__button &__icon::before,
+  &__checkbox:checked ~ &__button &__icon::after
+  {
+    @media only screen and (max-width: 1024px)
+    {
+      background-color: $cfailure;
+    }
+  }
+
+  &--alt &__icon,
+  &--alt &__icon::before,
+  &--alt &__icon::after
+  {
+    background-color: $cbase;
+  }
+
+  &--alt &__checkbox:checked + &__button>&__icon::before,
+  &--alt &__checkbox:checked + &__button>&__icon::after
+  {
+    background-color: $ccontrast;
+  }
+
+  &--alt &__checkbox:checked + &__button:hover>&__icon::before,
+  &--alt &__checkbox:checked + &__button:hover>&__icon::after
+  {
+    background-color: $cfailure;
+  }
+
+  &--alt &__checkbox:checked + &__button>&__icon::before,
+  &--alt &__checkbox:checked + &__button>&__icon::after
+  {
+    @media only screen and (max-width: 1024px)
+    {
+      background-color: $cfailure;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30px"
+   height="30px"
+   viewBox="0 0 30 30"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="facebook_secondary.svg">
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="7.8666667"
+     inkscape:cx="-0.82627119"
+     inkscape:cy="15"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <desc
+     id="desc4">Created with Lunacy</desc>
+  <path
+     d="M30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15ZM16.0944 15.5872L18.7709 15.5872L19.1252 12.1443L16.0946 12.1443L16.0946 10.1161C16.0946 9.35541 16.5973 9.17679 16.9548 9.17679L19.1343 9.17679L19.1343 5.83175L16.1305 5.81918C12.7967 5.81918 12.0392 8.31633 12.0392 9.91104L12.0392 12.1411L10.1105 12.1411L10.1105 15.5872L12.0392 15.5872L12.0392 25.3929L16.0944 25.3929L16.0944 15.5872Z"
+     id="Combined-Shape"
+     fill="#FFFFFF"
+     fill-rule="evenodd"
+     stroke="none"
+     style="fill:#666666;fill-opacity:1" />
+</svg>

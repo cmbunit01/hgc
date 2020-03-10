@@ -1,0 +1,188 @@
+.nav-cards
+{
+  position: relative;
+  margin: 2rem auto;
+
+  width: 80%;
+  height: 38rem;
+
+  overflow: visible;
+
+  @media only screen and (max-width: 700px)
+  {
+    width: 95%;
+  }
+
+  @media only screen and (max-height: 650px)
+  and (orientation: landscape)
+  {
+    height: 90vh;
+  }
+
+  &__items
+  {
+    display: grid;
+    width: 110%;
+    position: relative;
+    left: 2rem;
+    height: 38rem;
+
+    grid-auto-columns: 25vw;
+    grid-template-rows: 100%;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-auto-flow: column;
+
+    list-style: none;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    // Using this to allow the scroll bar to inherit
+    transition: background-color .2s;
+
+    &::-webkit-scrollbar
+    {
+      display: block;
+      top: calc(100% + 1rem);
+      left: 0;
+      width: 100%;
+      height: .6rem;
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb
+    {
+      background-color: transparent;
+      transition: inherit;
+    }
+
+    &:hover::-webkit-scrollbar
+    {
+      background-color: $fclighter;
+    }
+
+    &:hover::-webkit-scrollbar-thumb
+    {
+      transition: inherit;
+      background-color: $fclight;
+    }
+
+    @media only screen and (max-height: 650px)
+    and (orientation: landscape)
+    {
+      height: 90vh;
+    }
+
+    @media only screen and (max-height: 650px)
+    and (orientation: portrait)
+    {
+      height: 90vh;
+    }
+
+    @media only screen and (max-width: 1366px)
+    {
+      grid-auto-columns: 30vw;
+    }
+
+    @media only screen and (max-width: 1080px)
+    {
+      grid-auto-columns: 40vw;
+    }
+
+    @media only screen and (max-width: 800px)
+    {
+      grid-auto-columns: 50vw;
+    }
+
+    @media only screen and (max-width: 600px)
+    {
+      grid-auto-columns: 70vw;
+    }
+
+    @media only screen and (max-height: 500px)
+    {
+      grid-auto-columns: 25vw;
+    }
+  }
+
+  &__item
+  {
+    position: relative;
+
+    z-index: 2;
+
+    &::before
+    {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      background-color: rgba($cbase, .5);
+
+      z-index: 1;
+    }
+  }
+
+  &__text
+  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+
+    & *:not(:last-child)
+    {
+      margin-bottom: 1.7rem;
+    }
+  }
+
+  & .btn
+  {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__image
+  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__pagination
+  {
+    display: grid;
+    margin: 2rem 0;
+    grid-template-columns: repeat(3, 25vw);
+  }
+
+  &__pages
+  {
+    display: grid;
+    margin-left: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 1rem;
+
+    list-style: none;
+  }
+
+  &__page
+  {
+    width: 100%;
+    height: .2rem;
+    background-color: $fclighter;
+
+    &--active
+    {
+      background-color: $fclight;
+    }
+  }
+}

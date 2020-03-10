@@ -1,0 +1,170 @@
+.ddmenu
+{
+  &__checkbox
+  {
+    display: none;
+  }
+
+  &__button
+  {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    &:hover
+    {
+      transform: skew(-10deg);
+    }
+  }
+
+  &__icon
+  {
+    margin-right: 1.1rem;
+
+    background-image: url('../images/assets/icons/symbols/calendar.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    transition: background-image .2s;
+  }
+
+  &__button:hover > &__icon
+  {
+    background-image: url('../images/assets/icons/symbols/calendar-success.svg');
+  }
+
+  &__nav
+  {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    @media only screen and (max-width: 1080px)
+    {
+      display: none;
+    }
+  }
+
+  &__checkbox:checked + &__button
+  {
+    border: 1px solid $csuccess;
+  }
+
+  &__checkbox:checked + &__button > .btn__text
+  {
+    color: $csuccess;
+  }
+
+  &__checkbox:checked + &__button > &__icon
+  {
+    background-image: url('../images/assets/icons/symbols/calendar-success.svg');
+  }
+
+  &__checkbox:checked ~ &__items
+  {
+    height: 100%;
+    opacity: 1;
+    transform: rotateX(0deg);
+    transition: opacity .2s, transform .4s;
+    overflow: visible;
+  }
+
+  &__items
+  {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 0;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    opacity: 0;
+    transition: opacity .2s, transform .4s;
+    transform: rotateX(-90deg);
+    overflow: hidden;
+  }
+
+  &__item
+  {
+    &:nth-child(1)
+    {
+      transform: translateX(-10px);
+    }
+
+    &:nth-child(2)
+    {
+      transform: translateX(-20px);
+    }
+  }
+
+  &__link
+  {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($cbase, .25);
+
+    &:hover
+    {
+      transform: skewX(-10deg);
+      border: 1px solid $csuccess;
+    }
+
+    &:hover .btn__text
+    {
+      color: $csuccess;
+
+      &::after
+      {
+        background-image: url('../images/assets/icons/symbols/arrow-success.svg');
+      }
+    }
+
+    & .btn__text
+    {
+      &::after
+      {
+        content: '';
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        right: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url('../images/assets/icons/symbols/arrow.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        transition: background-image .2s;
+      }
+    }
+  }
+}
+
+.nav-top--alt .ddmenu
+{
+  &__button
+  {
+    border: 1px solid $cbase;
+  }
+
+  &__icon
+  {
+    background-image: url('../images/assets/icons/symbols/calendar-alt.svg');
+  }
+
+  &__button.btn--fill
+  {
+    background-color: $cbase;
+  }
+
+  &__link
+  {
+    background-color: $csecondary;
+  }
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30px"
+   height="30px"
+   viewBox="0 0 30 30"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="youtube-success.svg">
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="7.8666667"
+     inkscape:cx="-0.82627119"
+     inkscape:cy="15"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <desc
+     id="desc4">Created with Lunacy</desc>
+  <path
+     d="M15 0C6.717 0 0 6.717 0 15C0 23.283 6.717 30 15 30C23.283 30 30 23.283 30 15C30 6.717 23.283 0 15 0ZM24.3727 15.0153C24.3727 15.0153 24.3727 18.0574 23.9868 19.5243C23.7705 20.3272 23.1374 20.9603 22.3345 21.1764C20.8676 21.5625 15 21.5625 15 21.5625C15 21.5625 9.14772 21.5625 7.66548 21.161C6.86256 20.945 6.22948 20.3117 6.01318 19.5087C5.62706 18.0574 5.62706 15 5.62706 15C5.62706 15 5.62706 11.9582 6.01318 10.4913C6.22925 9.68834 6.8779 9.03969 7.66548 8.82362C9.13239 8.4375 15 8.4375 15 8.4375C15 8.4375 20.8676 8.4375 22.3345 8.83896C23.1374 9.05502 23.7705 9.68834 23.9868 10.4913C24.3883 11.9582 24.3727 15.0153 24.3727 15.0153ZM18.0109 15L13.1316 17.8102L13.1316 12.1898L18.0109 15Z"
+     id="Combined-Shape"
+     fill="#FFFFFF"
+     fill-rule="evenodd"
+     stroke="none"
+     style="fill:#0394de;fill-opacity:1" />
+</svg>

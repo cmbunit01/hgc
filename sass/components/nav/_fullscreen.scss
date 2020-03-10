@@ -1,0 +1,155 @@
+.fullscreen-menu
+{
+  &__items
+  {
+    width: calc(100% - 16%);
+    position: absolute;
+    top: 50%;
+    left: 16%;
+    transform: translateY(-50%);
+    list-style: none;
+
+    z-index: 1001;
+
+    overflow: hidden;
+
+    &>*:not(:last-child)
+    {
+      margin-bottom: 2rem;
+
+      @media only screen and (max-height: 760px)
+      {
+        margin-bottom: 1.4vh;
+      }
+    }
+
+    @media only screen and (max-width: 480px),
+    only screen and (max-height: 900px)
+    {
+      top: 55%;
+    }
+
+    @media only screen and (max-height: 600px)
+    and (orientation: landscape)
+    {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      grid-row-gap: 2.5vh;
+      grid-auto-flow: row;
+    }
+  }
+
+  &__top
+  {
+
+  }
+
+  &__main
+  {
+    list-style: none;
+  }
+
+  &__secondary,
+  &__social
+  {
+    list-style: none;
+
+    &__item
+    {
+      display: inline-block;
+    }
+  }
+
+  &__main li>a
+  {
+
+  }
+
+  &__social
+  {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__main &__item
+  {
+    &:not(:last-child)
+    {
+      margin-bottom: 1rem;
+
+      @media only screen and (max-height: 760px)
+      {
+        margin-bottom: 1vh;
+      }
+    }
+  }
+
+  &__secondary &__item
+  {
+    &:not(:last-child)
+    {
+      margin-bottom: 1rem;
+
+      @media only screen and (max-height: 760px)
+      {
+        margin-bottom: 1vh;
+      }
+    }
+  }
+
+  &__social &__item
+  {
+    &:not(:last-child)
+    {
+      margin-right: 1rem;
+    }
+  }
+
+  &__logo
+  {
+    position: absolute;
+    width: auto;
+    height: 50%;
+    bottom: 0;
+    right: -10%;
+    //transform: translate(-50%, -50%);
+  }
+
+  &__main &__item>&__children
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0%;
+
+    transition: opacity .2s, transform .4s;
+    opacity: 0;
+
+    overflow: hidden;
+
+    @media only screen and (max-width: 660px)
+    and (orientation: portrait)
+    {
+      position: relative;
+      height: 0;
+      transform: rotateX(-90deg);
+    }
+
+    &--active
+    {
+      display: block;
+      width: 100%;
+      transform: translateX(40%);
+      opacity: 1;
+
+      @media only screen and (max-width: 660px)
+      and (orientation: portrait)
+      {
+        height: 100%;
+        margin: 2vh 0;
+        transform: rotateX(0deg);
+      }
+    }
+  }
+}

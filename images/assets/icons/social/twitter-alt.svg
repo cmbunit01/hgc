@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30px"
+   height="30px"
+   viewBox="0 0 30 30"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="twitter_secondary.svg">
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="7.8666667"
+     inkscape:cx="-0.82627119"
+     inkscape:cy="15"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <desc
+     id="desc4">Created with Lunacy</desc>
+  <path
+     d="M30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15ZM22.1286 11.344C22.8538 11.2579 23.5453 11.0651 24.1881 10.7801C23.7076 11.4991 23.0998 12.1304 22.3987 12.6357C22.4056 12.7892 22.4091 12.944 22.4091 13.0994C22.4091 17.8378 18.8026 23.3011 12.2077 23.3011C10.183 23.3011 8.29792 22.7078 6.71204 21.6901C6.99199 21.7235 7.2781 21.7404 7.56688 21.7404C9.24715 21.7404 10.7929 21.1673 12.0202 20.2055C10.4509 20.1764 9.1271 19.1397 8.67093 17.7156C8.88965 17.7573 9.11399 17.7795 9.34555 17.7795C9.67204 17.7795 9.98943 17.7359 10.29 17.6536C8.65007 17.3244 7.41367 15.8754 7.41367 14.1382C7.41367 14.1232 7.41367 14.108 7.41393 14.0928C7.89711 14.362 8.45033 14.5232 9.03779 14.5417C8.07626 13.8989 7.44281 12.801 7.44281 11.5574C7.44281 10.9004 7.61982 10.2841 7.92839 9.75463C9.6969 11.9245 12.339 13.3518 15.3188 13.5013C15.2573 13.2387 15.2254 12.9652 15.2254 12.6841C15.2254 10.7044 16.8311 9.09872 18.8109 9.09872C19.8427 9.09872 20.7746 9.53403 21.4286 10.2306C22.2449 10.0699 23.0126 9.77174 23.7054 9.36077C23.4372 10.1985 22.869 10.9004 22.1286 11.344Z"
+     id="Combined-Shape"
+     fill="#FFFFFF"
+     fill-rule="evenodd"
+     stroke="none"
+     style="fill:#666666;fill-opacity:1" />
+</svg>

@@ -1,0 +1,71 @@
+.scorecard
+{
+  margin-bottom: 1rem;
+  &__header
+  {
+    background-color: $csecondary;
+  }
+
+  &__items
+  {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    list-style: none;
+  }
+
+  &__table>&__items
+  {
+    &:nth-child(odd)
+    {
+      background-color: $cbg;
+      border-top: 1px solid $cb1;
+      border-bottom: 1px solid $cb1;
+    }
+  }
+
+  &__item
+  {
+    display: flex;
+    padding: 15%;
+    align-items: center;
+    justify-content: center;
+
+    &--white,
+    &--yellow,
+    &--red
+    {
+      &::before
+      {
+        content: '';
+        position: relative;
+        width: 1.1rem;
+        height: 1.1rem;
+        margin-right: 1.1rem;
+      }
+    }
+
+    &--white
+    {
+      &::before
+      {
+        background-color: $cwhite;
+      }
+    }
+
+    &--yellow
+    {
+      &::before
+      {
+        background-color: $cyellow;
+      }
+    }
+
+    &--red
+    {
+      &::before
+      {
+        background-color: $cred;
+      }
+    }
+  }
+}
